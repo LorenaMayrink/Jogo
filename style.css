@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:  border-box;
+    text-decoration: none;
+}
+
+.wrapper {
+    display: flex;
+    background-color: #ecdfe4;
+}
+
+.principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.sub-secao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    gap: 100px
+    
+}
+
+#palavras {
+    font-family: 'Roboto', sans-serif;
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+#botao {
+        background-color: hwb(300 42% 21% / 0.808);
+        width: 180px;
+        height: 60px;
+        border: none;
+        box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 20px;
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+        color: #fff;
+        font-weight: 500;
+        font-size: 2rem;
+}
+#botao:hover {
+        background-color: rgba(134, 168, 212, 0.911);
+        cursor: pointer;
+}
+
+#botao:active {
+    box-shadow: none;
+}
+
+.botoes {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.intrucoes {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.titulo {
+    font-family: 'DynaPuff', cursive;
+    font-size: 6rem;
+    font-weight: 300;
+    color: #9c359c;
+}
+
+.descricao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40vw;
+    height: 50vh;
+    padding: 0px 20px ;
+    background-color: #e0b7c7c0;
+    border-radius: 25px;
+    line-height: 2.1em;
+}
+
+.item {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 550;
+    color: #000;
+    list-style-type: none;
+    padding: 5px;
+
+}
+.btn {
+    background-color: #9c359c;
+    width: 180px;
+    height: 60px;
+    border: none;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: #fff;
+    font-weight: 500;
+    font-size: 2rem;
+    padding-top: 10px;
+}
+
+.btn:hover {
+    background-color: rgba(134, 168, 212, 0.911);
+    cursor: pointer;
+}
+
+.btn:active {
+    box-shadow: none;
+}
