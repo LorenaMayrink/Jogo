@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DynaPuff&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
 
 * {
     margin: 0;
@@ -10,7 +10,7 @@
 
 .wrapper {
     display: flex;
-    background-color: #ecdfe4;
+    background-color: #fff;
 }
 
 .principal {
@@ -39,7 +39,7 @@
 }
 
 #botao {
-        background-color: hwb(300 42% 21% / 0.808);
+        background-color: hwb(216 48% 6% / 0.904);
         width: 180px;
         height: 60px;
         border: none;
@@ -49,7 +49,8 @@
         text-align: center;
         color: #fff;
         font-weight: 500;
-        font-size: 2rem;
+        font-size: 1.2rem;
+        
 }
 #botao:hover {
         background-color: rgba(134, 168, 212, 0.911);
@@ -66,7 +67,7 @@
     gap: 40px;
 }
 
-.intrucoes {
+.instrucoes {
     height: 100vh;
     width: 100%;
     display: flex;
@@ -76,10 +77,10 @@
 }
 
 .titulo {
-    font-family: 'DynaPuff', cursive;
-    font-size: 6rem;
+    font-family: 'Noto Serif', serif;
+    font-size: clamp(1.5rem, 4rem, 6rem);
     font-weight: 300;
-    color: #9c359c;
+    color: rgba(134, 168, 212);
 }
 
 .descricao {
@@ -90,22 +91,24 @@
     width: 40vw;
     height: 50vh;
     padding: 0px 20px ;
-    background-color: #e0b7c7c0;
-    border-radius: 25px;
-    line-height: 2.1em;
+    background-color: rgba(205, 214, 228, 0.781);
+    border-radius: 15px;
+    
+    /*overflow: scroll*/;
 }
 
-.item {
+.descricao .item {
     font-family: 'Roboto', sans-serif;
-    font-size: 1.2rem;
+    font-size: clamp(0.9rem, 1.1rem, 1.5rem);
     font-weight: 550;
+    line-height: 1.5rem;
     color: #000;
     list-style-type: none;
     padding: 5px;
 
 }
 .btn {
-    background-color: #9c359c;
+    background-color:  hwb(216 48% 6% / 0.904);
     width: 180px;
     height: 60px;
     border: none;
@@ -126,4 +129,44 @@
 
 .btn:active {
     box-shadow: none;
+}
+
+/* media queries */
+
+@media(max-width: 1024px) {
+    .descricao{
+        width: 70%;
+        height: 75%;
+    }
+    .botoes{
+        display: flex;
+        flex-direction: column;
+    }
+    .btn {
+        margin-bottom: 5px;
+    }
+}
+
+@media(max-width: 700px) {
+    .descricao{
+        width: 100%;
+        line-height: 1.0em;
+    }
+    .instrucoes {
+        gap: 10px
+    }
+@media(max-width: 300px){
+    .descricao{
+        width: 100%;
+        overflow-y: scroll;
+        font-size: 0.2rem;
+    }
+    .descricao .item {
+        font-size: 0.9rem;
+    }
+    .titulo {
+        font-size: 2rem;
+    }
+}
+    
 }
